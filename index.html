@@ -45,23 +45,68 @@
                 <div class=" flex flex-row items-center text-md  ">
 
                     <div class="absolute top-7 right-4.5">
-                        <label for="toggle"> <i class="fas fa-phone-volume mr-4"></i></label>
-                        <label for="contact"> <i class="fas fa-bars"></i></label>
+
+                        <label for="contact"> <i class="fas fa-phone-volume mr-4"></i></label>
+                        <label for="toggle" class="z-100">
+
+                            <i class="peer-checked:hidden fas fa-bars"></i>
+                            <!-- <i class="hidden peer-checked:block fas fa-times"></i> -->
+                        </label>
+
                     </div>
 
-                    <div class="px-4.5">
-                        <input type="checkbox" id="toggle" class="hidden peer">
+                    <div class="flex">
+                        <input type="checkbox" id="toggle" class="hidden peer z-100">
 
-                        <div class="peer-checked:flex hidden flex-col p-4 bg-white border shadow-md absolute
+
+
+                        <div class="peer-checked:flex hidden flex-col p-4 mt-7 bg-black absolute
                              top-13 right-0 w-screen z-50 items-center">
-                            <p class="text-gray-700">سلام! من بدون جابه‌جا کردن چیز دیگه‌ای ظاهر می‌شم.</p>
+                            <div class="  w-full rounded-lg text-white">
+                                <section class="px-4.5 text-white">
+                                    <div>
+                                        <div class="font-bold text-xl">Avtorus TANK Losiny Ostrov</div>
+                                        <span class="text-sm text-neutral-500 ">Official Dealer</span>
+                                    </div>
+                                    <div class="mt-9">
+                                        <span class="font-bold text-3xl ">+7 (999) 999-99-99</span>
+                                        <div class="relative mb-5">
+                                            <i class="fas fa-circle absolute top-2.75 text-green-400 text-[6px]"></i>
+                                            <span class="ml-3 text-neutral-500 text-sm ">Available</span>
+                                        </div>
+                                    </div>
+                                    <div class="relative py-3 flex flex-row text-neutral-500">
+                                        <i class="fas fa-location-dot font-medium text-md"></i>
+                                        <span class="absolute left-5 top-2">Yaroslavskoye Highway, Property 2V,<br>
+                                            Building 3 (MKAD, 95 km)</span>
+                                    </div>
+                                    <button type="submit" class=" bg-orange-400 text-black mt-15 text-center rounded-lg hover:bg-orange-300 w-full
+                      h-10 text-xs font-bold"><i class="fas fa-phone mr-1 ml-0"></i>
+                                        Schedule a Call
+                                    </button>
+
+                                    <div class="mt-3">
+                                        <div class="flex flex-row justify-center mx-auto py-5 font-medium">
+                                            <i class="fas fa-gear text-orange-400 mr-1 mt-1.25"></i>
+                                            <span class="">schedule a service appointment</span>
+                                        </div>
+                                        <div class="flex flex-row justify-center mx-auto font-medium">
+                                            <i class="fas fa-gauge-simple-high text-orange-400 mr-1 mt-1.25"></i>
+                                            <span class="mb-20">schedule test drive</span>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+
+
                         </div>
                     </div>
                     <div class="flex">
                         <input type="checkbox" id="contact" class="hidden peer">
                         <div class="peer-checked:block hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
 
-                        <div class="peer-checked:flex hidden flex-col py-3 bg-white absolute px-4.5
+                        <div class="peer-checked:flex hidden flex-col py-3  absolute px-4.5
                               right-0  top-20 mr-0 w-screen z-50 ">
 
                             <div class="px-4.5 w-full rounded-lg bg-neutral-700 text-white">
@@ -77,15 +122,39 @@
                                         and our manager will reach out to you <br> within 15 minutes.</span>
                                 </div>
 
-                                <div>
-                                    <label for="model"
-                                        class="block mb-2 text-sm font-medium text-gray-300">Model</label>
-                                    <select id="model" name="model" class="w-full bg-neutral-700 rounded-md p-3 
-                        focus:outline-none focus:ring-2 focus:ring-orange-400 text-neutral-400 text-sm">
+                                <div class="">
+                                    <label for="model" class="block  text-sm mb-1 text-gray-300">Model</label>
+                                    <select id="model" name="model"
+                                        class="w-full bg-neutral-700 rounded-md py-3 mb-3
+                        focus:outline-none focus:ring-2 focus:ring-orange-400 border-2 border-neutral-400 text-neutral-400 text-sm">
                                         <option>Select a model</option>
                                         <option>TANK 300</option>
                                         <option>TANK 500</option>
                                     </select>
+                                </div>
+
+                                <div class="py-4 text-xs ">
+                                    <form action="" class="flex flex-col">
+                                        <label for="phone" class="mb-2">Phone Number</label>
+                                        <input id="phone" placeholder="+7 (___) ___-__-__" type="tel" class=" bg-neutral-700 rounded-md p-3 
+        focus:outline-none border-2 border-neutral-300 text-neutral-400 text-sm w-full">
+
+                                    </form>
+                                </div>
+                                <div class="pb-7">
+                                    <button type="submit" class=" bg-orange-400 text-black  text-center rounded-lg hover:bg-orange-300 w-full
+                      h-10 text-xs font-bold">Apply now
+                                        <i class="fas fa-angle-right ml-2"></i>
+                                    </button>
+
+                                </div>
+
+                                <div class="-mt-3 my-5">
+                                    <label for="" class="text-xs">
+                                        <input type="checkbox" name="" id="">
+                                        I consent to the terms processing my personal data
+
+                                    </label>
                                 </div>
 
                             </div>
@@ -93,7 +162,8 @@
                     </div>
 
 
-                </div>
+
+                </div> <!-- here -->
             </div>
 
 
